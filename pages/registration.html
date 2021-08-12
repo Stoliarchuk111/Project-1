@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Регистрация</title>
+</head>
+<body style="background-image: url(../assets/img/art-registrarion.jpg);">
+    <header class="header">
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item"><a class="header__navbar-link" href="../index.html">Главная</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="article.html">Статьи</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="catalog.html">Каталог</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="contacts.html">Контакты</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="gallery.html">Галерея</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="page-nav.html">Навигация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="container">
+    <section>
+        <div class="registr-title"><h1>Форма регистрации</h1></div> 
+
+        <form action="register.php" method="POST"></form>
+        <fieldset>
+            <legend>1.Базовые поля ввода</legend>
+            <div class="form__group">
+                <label for="login">Логин</label>
+                <input id="login" required name="login" value="userName" 
+               minlength="3" maxlength="10" placeholder="Введите логин" type="text">
+            </div>
+            <div class="form__group">
+                <label for="password">Пароль</label>
+                <input id="password" name="passw" 
+                minlength="5" maxlength="15" placeholder="Пароль" type="password">
+            </div>
+            <div class="form__group">
+                <label for="age">Возраст</label>
+                <input id="age" name="age" 
+            placeholder="Возраст" type="number">
+            </div>
+            <div>
+                <label for="email">Имейл</label>
+                <input id="email" name="email" 
+                placeholder="Имейл" type="email">
+            </div>
+            <div class="form__group">
+                <label for="search">Поиск</label>
+                <input id="search" name="search"
+                placeholder="Поиск" type="search">
+            </div>
+            <div class="form__group">
+                <label for="phone">Телефон</label>
+                <input id="phone" name="phone" 
+                placeholder="Телефон" type="tel">
+            </div>
+            <div class="form__group">
+                <label for="date">Год рождения</label>
+                <input id="date" name="date"
+                type="date">
+            </div>
+            <div class="form__group">
+                <label for="month">Дата поступления в вуз</label>
+               <input id="month" name="month" type="month">
+            </div>
+            <div class="form__group">
+                <label for="file">Ваша аватарка</label>
+               <input id="file" name="file" type="file">
+            </div>
+            <div>
+               <input name="hidden" type="hidden">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>#2 Множественый выбор</legend>
+            <p>Выбирите предпочитаемую кухню</p>
+            <div class="form__group-sm">
+                <input id="kit-ua" checked name="kitchen" 
+                value="ukrainian" type="checkbox">
+                <label for="kit-ua">Украиская</label>
+            </div>
+            <div class="form__group-sm">
+                <input id="kit-gr" name="kitchen" value="georgian" type="checkbox">
+                <label for="kit-gr">Грузинская</label>
+            </div>
+            <div class="form__group-sm">
+                <input id="kit-it" name="kitchen" value="italian" type="checkbox">
+                <label for="kit-it">Итальянская</label>
+            </div>
+            <div class="form__group-sm">
+                <input id="kit-fr" name="kitchen" value="french" type="checkbox">
+                <label for="kit-fr">Французкая</label>
+            </div>
+            <div class="form__group-sm">
+                <input id="kit-us" name="kitchen" value="american" type="checkbox">
+                <label for="kit-us">Американская</label>
+            </div>
+            <div class="form__group-sm">
+                <input id="kit-jp" name="kitchen" value="japanese" type="checkbox">
+                <label for="kit-jp">Японская</label>
+            </div>
+            <div class="form__group-sm">
+                <input id="kit-ch" name="kitchen" value="chinese" type="checkbox">
+                <label for="kit-ch">Китайская</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>#3 Единственный выбор</legend>
+            <p>Укажите Ваш пол</p>
+            <div class="form__group-sm">
+                <input id="gender-male" name="gender" type="radio">
+                <label for="gender-male">Мужской</label>
+            </div>
+            <div class="form__group-sm">
+                <input id="gender-female" name="gender" type="radio">
+                <label for="gender-female">Женский</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+                <legend>#4 Открывающийся список</legend>
+                <div class="form__group">
+                <label for="list">Год выпуска авто</label>
+                <select name="list" id="list">
+                    <option selected disabled value="">Выберите год</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>#5 Многострочный текс</legend>
+            <div class="form__group">
+            <label for="txt">Подробная информация о себе</label>
+            <textarea placeholder="Введите информацию о себе..." name="txt" id="txt" cols="20" rows="7"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>#6 Кнопки управления кнопкой</legend>
+            <div class="btn-set">
+                <div class="form__group">
+                    <button type="submit">Отправить</button>
+                </div>
+                <div class="form__group">
+                    <button type="reset">Сбросить</button>
+                </div>
+                <div class="form__group">
+                    <button type="button" onclick="prompt('Who are you?', 'Im real web developer!');">Потренироваться</button>
+                </div>
+            </div>
+        </fieldset>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__copy">&copy; Stoliarchuk Nataliia</div>
+</footer>
+</body>
+</html>

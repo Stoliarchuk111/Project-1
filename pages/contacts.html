@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Контакты</title>
+</head>
+<body style="background-image: url(../assets/img/art-contact.jpg);">
+    <header class="header">
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item"><a class="header__navbar-link" href="../index.html">Главная</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="article.html">Статьи</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="catalog.html">Каталог</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="registration.html">Регистрация</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="gallery.html">Галерея</a></li>
+                <li class="header__navbar-item"><a class="header__navbar-link" href="page-nav.html">Навигация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <!--Блок адреса-->
+            <div class="contacts-title"><h1>Контакты</h1></div>
+            <div>
+                <div>
+                    <div class="contacts__addres">
+                        <h2>Адрес</h2>
+                        <p>Киевская обл. <br>
+                          Киево-Святошинский <br> 
+                          р-н  Белогородка <br>
+                          ул.Парковая 8
+                        </p>
+                    </div>
+                    <div class="contacts__time">
+                            <h2>Время работы</h2>
+                            <p>Пн.-Пт. с 10.00 до 18.00</p>
+                    </div>
+                    <div class="contacts__map">
+                            <h2>Как нас найти</h2>
+                            <iframe class="google__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.807970672259!2d30.261151515729097!3d50.38877817946682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb4567722a01%3A0x44b942da7cbaba0e!2z0JHQtdC70L7Qs9C-0YDQvtC00LrQsCDRg9C7LiDQn9Cw0YDQutC-0LLQsNGPIDg!5e0!3m2!1sru!2sua!4v1627408332822!5m2!1sru!2sua"
+                             width="600" height="350" style="border:0;" ></iframe>
+                    </div>
+                </div>
+
+                <!--Форма контактов-->
+        <div class="contacts__feedback">
+            <h2>Обратная связь</h2>
+            <form class="contacts__form" action="contacts.php" method="GET">
+        <div class="form__group">
+            <label for="name">Ваше имя</label>
+            <input id="name"  name="name" type="text" placeholder="Введите имя" autofocus>
+        </div>
+        <div class="form__group">
+            <label for="phone">Контактый телефон</label>
+            <input id="phone" name="phone" type="tel" 
+            pattern="380-[0-9]{5}-[0-9]{4}"
+            placeholder="Ваш телефон в формате 380-XXXXX-XXXX">
+        </div>
+        <div class="form__group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email"
+            placeholder="Ваш e-mail">
+        </div>
+        <div class="form__group">
+            <label for="txt">Вопрос</label>
+            <textarea name="question" id="txt" cols="40" rows="7"
+            placeholder="Задайте нам свой вопрос"
+            ></textarea>
+        </div>
+        <div class="form__group">
+            <button type="submit">Отправить</button>
+        </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+</main>
+
+<footer class="footer">
+    <div class="footer__copy">&copy; Stoliarchuk Nataliia</div>
+</footer>
+</body>
+</html>
