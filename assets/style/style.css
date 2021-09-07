@@ -181,22 +181,22 @@ h4 {
 }
 
 .index-menu__img-index {
-    background-image: url(/assets/img/index-index.jpg);
+    background-image: url(../img/index-index.jpg);
 }
 .index-menu__img-article {
-    background-image: url(/assets/img/index-articles.png);
+    background-image: url(../img/index-articles.png);
 }
 .index-menu__img-catalog {
-    background-image: url(/assets/img/index-catalog2.jpg);
+    background-image: url(../img/index-catalog2.jpg);
 }
 .index-menu__img-galery {
-    background-image: url(/assets/img/index-galery.jpg);
+    background-image: url(../img/index-galery.jpg);
 }
 .index-menu__img-regist {
-    background-image: url(/assets/img/index-registration.jpg);
+    background-image: url(../img/index-registration.jpg);
 }
 .index-menu__img-contacts {
-    background-image: url(/assets/img/index-contacts.jpg);
+    background-image: url(../img/index-contacts.jpg);
 }
 
 .page-title,
